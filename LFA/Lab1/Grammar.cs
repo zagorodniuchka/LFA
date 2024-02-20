@@ -35,6 +35,7 @@ class Grammar
     private string Expand(char symbol)
     {
         var result = "";
+
         if (rules.ContainsKey(symbol))
         {
             var possibleProductions = rules[symbol];
