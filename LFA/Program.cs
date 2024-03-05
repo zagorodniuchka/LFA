@@ -13,6 +13,10 @@ class Program
                 RunLab1();
                 break;
 
+            case "lab2":
+                RunLab2();
+                break;
+
             default:
                 Console.WriteLine("Coming soon");
                 break;
@@ -39,6 +43,19 @@ class Program
         else
         {
             Console.WriteLine("The string is not accepted by the automaton.");
+        }
+    }
+
+    private static void RunLab2()
+    {
+        try
+        {
+            ChomskyGrammar myGrammar = new ChomskyGrammar();
+            Console.WriteLine($"Grammar Classification: {myGrammar.Classify()}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error in lab2: {ex.Message}");
         }
     }
 }
