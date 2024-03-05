@@ -1,18 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class ChomskyGrammarClassifier
-{
-    //public static void Main()
-    //{
-    //    // Creating an instance of your grammar
-    //    ChomskyGrammar myGrammar = new ChomskyGrammar();
-
-    //    // Classifying the grammar and printing the result
-    //    Console.WriteLine($"Grammar Classification: {myGrammar.Classify()}");
-    //}
-}
-
 class ChomskyGrammar
 {
     public HashSet<char> VN { get; } = new HashSet<char> { 'S', 'A', 'B', 'C' };
