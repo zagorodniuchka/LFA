@@ -17,6 +17,10 @@ class Program
                 RunLab2();
                 break;
 
+            case "lab3":
+                RunLab3();
+                break;
+
             default:
                 Console.WriteLine("Coming soon");
                 break;
@@ -52,6 +56,27 @@ class Program
         {
             ChomskyGrammar myGrammar = new ChomskyGrammar();
             Console.WriteLine($"Grammar Classification: {myGrammar.Classify()}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error in lab2: {ex.Message}");
+        }
+    }
+
+    private static void RunLab3()
+    {
+        try
+        {
+            Console.WriteLine("Enter an arithmetic expression:");
+            string input = Console.ReadLine();
+            Lexer lexer = new Lexer(input);
+
+            Token token;
+            do
+            {
+                token = lexer.GetNextToken();
+                Console.WriteLine(token);
+            } while (token.Type != Token.TokenType.EOF);
         }
         catch (Exception ex)
         {
