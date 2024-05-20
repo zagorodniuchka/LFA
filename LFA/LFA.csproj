@@ -11,10 +11,16 @@
     <None Remove="Lab1\" />
     <None Remove="Lab2\" />
     <None Remove="Lab3\" />
+    <None Remove="Lab4\" />
+    <None Remove="Lab5\" />
+    <None Remove="Lab6\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Lab1\" />
     <Folder Include="Lab2\" />
     <Folder Include="Lab3\" />
+    <Folder Include="Lab4\" />
+    <Folder Include="Lab5\" />
+    <Folder Include="Lab6\" />
   </ItemGroup>
 </Project>
